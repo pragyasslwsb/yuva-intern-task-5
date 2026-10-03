@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f5ef">
+    <meta name="description" content="Find a little room to roam. Discover thoughtful weekend escapes with Northstar.">
+    <title>Northstar — find room to roam</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- Shared page chrome stays in place while app.js replaces the view inside #app. -->
+    <header class="site-header">
+      <a class="brand" href="?page=home" aria-label="Northstar home">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>northstar<span class="brand-period">.</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="?page=home" data-nav="home">Home</a>
+        <a href="?page=explore" data-nav="explore">Explore</a>
+        <a href="?page=saved" data-nav="saved">Saved <span class="saved-count" aria-label="saved trips">0</span></a>
+      </nav>
+      <a class="header-cta" href="?page=explore">Find your somewhere <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <div id="app" aria-live="polite" aria-busy="false"></div>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand-footer" href="?page=home">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>northstar<span class="brand-period">.</span></span>
+      </a>
+      <p>A little more outside. A lot more you.</p>
+      <span class="footer-note">Made for the in-between days <span aria-hidden="true">✳</span></span>
+    </footer>
+    <!-- One shared status region announces save and storage messages to assistive technology. -->
+    <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>

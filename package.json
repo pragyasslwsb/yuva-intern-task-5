@@ -1,0 +1,9 @@
+{
+  "name": "northstar-spa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An offline-friendly client-side routing SPA for thoughtful weekend getaways.",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
